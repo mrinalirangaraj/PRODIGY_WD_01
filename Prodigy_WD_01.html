@@ -1,0 +1,127 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1" />
+    <title>
+        Fixed Interactive Navigation Menu Bar
+    </title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet3.css">
+</head>
+<body>
+    <h3>
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+        This is a webpage with fixed interactive navigator that can change color when the page is scrolled up or down.
+    </h3>
+    <nav id="navbar">
+        <a href="#" class="brand">
+            <span>
+                <ion-icon name="logo-amplify"></ion-icon>
+            </span>
+            <span>
+                ABOKY
+            </span>
+        </a>
+        <ul>
+            <li style="--i:0;">
+                <a href="#">
+                    <span>
+                        HOME
+                    </span>
+                    <span>
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li style="--i:1;">
+                <a href="#">
+                    <span>
+                        VIDEOS
+                    </span>
+                    <span>
+                        <ion-icon name="videocam-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li style="--i:2;">
+                <a href="#">
+                    <span>
+                        PHOTOS
+                    </span>
+                    <span>
+                        <ion-icon name="image-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li style="--i:3;">
+                <a href="#">
+                    <span>
+                        TEAM
+                    </span>
+                    <span>
+                        <ion-icon name="people-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <li style="--i:4;">
+                <a href="#">
+                    <span>
+                        CONTACT
+                    </span>
+                    <span>
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function () {
+            let scrollTop = window.pageYOffset ||
+                document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                navbar.classList.add('icon');
+            }
+            else {
+                navbar.classList.remove('icon');
+            }
+            lastScrollTop = scrollTop;
+        })
+    </script>
+</body>
+</html>
