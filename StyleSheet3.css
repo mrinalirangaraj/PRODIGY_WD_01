@@ -1,0 +1,100 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+body {
+    background: repeating-linear-gradient(white,deeppink);
+    min-height: 200vh;
+}
+.body h3{
+    color:black;
+    height:auto;
+}
+nav {
+    border: solid white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: #da61a2;
+    padding: 0 50px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon {
+    background: white;
+}
+ul {
+    display: flex;
+}
+
+ul li {
+        list-style: none;
+}
+ul li a {
+        position: relative;
+        color: white;
+        padding: 5px 20px;
+        font-size: 1.1em;
+        text-decoration: none;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+}
+.icon ul li a {
+    color: black;
+}
+ul li a span {
+    transition: 0.5s;
+    transition-delay: calc(0.05s * var(--i));
+}
+ul li:hover a span {
+    color: black;
+}
+ul li a span:nth-child(2) {
+    position: absolute;
+    transform: translateY(35px);
+    font-size: 1.6em;
+}
+ul li:hover a span:nth-child(2) {
+    color: deeppink;
+}
+.icon ul li a span:nth-child(2){
+    transform:translateY(2px)
+}
+.icon ul li a span:nth-child(1) {
+    transform: translateY(-30px)
+}
+.brand {
+    position: relative;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+    overflow:hidden;
+}
+.brand span {
+        transition: 0.5s;
+        display: block;
+}
+.brand span:nth-child(1) {
+        position: absolute;
+        transform: translateY(-80px);
+        font-size: 1.5em;
+}
+.icon .brand span:nth-child(1) {
+    transform: translateY(-5px);
+    color: black;
+}
+.icon .brand span:nth-child(2) {
+    transform: translateY(35px);
+}
